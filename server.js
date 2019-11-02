@@ -66,7 +66,7 @@ mongoose.connection.on('error', function () {
 /**
  * Carregar App Modules e Rotas
  */
-const router = require('./src/routes/api')(app);
+const router = require('./src/Routes/api.js')(app);
 
 /**
  * INICIA O SERVIDOR.
