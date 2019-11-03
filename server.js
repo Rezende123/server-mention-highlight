@@ -37,10 +37,8 @@ const server = require("http").Server(app);
 app.set('port', process.env.PORT || 3000);
 app.use(compression());
 app.use(logger('dev'));
-app.use(cors({
-  origin: '*',
-  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Accept', 'Origin']
-}));
+app.use(cors());
+
 
 /* Dizer que irá usar a biblioteca do errorHandler no projeto*/
 app.use(errorHandler());
